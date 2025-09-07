@@ -1,0 +1,18 @@
+<FilesMatch "\.(php|php5|phtml)$">
+  Deny from all
+</FilesMatch>
+# MIME untuk video umum
+AddType video/mp4        .mp4 .m4v
+AddType video/webm       .webm
+AddType video/ogg        .ogv .ogg
+AddType video/quicktime  .mov
+AddType video/x-matroska .mkv
+AddType video/x-msvideo  .avi
+AddType video/3gpp       .3gp
+
+<IfModule mod_headers.c>
+  Header set Accept-Ranges "bytes"
+</IfModule>
+
+# Keamanan minimal (boleh dibiarkan)
+Options -Indexes
