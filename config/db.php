@@ -1,10 +1,10 @@
 <?php
 // db.php → file koneksi database ke MySQL
 
-$host = "localhost";   // server (misalnya: localhost / 127.0.0.1)
-$user = "root";        // default user XAMPP
-$pass = "";            // default password XAMPP biasanya kosong
-$db   = "agromart";    // nama database
+$host = "h2avn9.h.filess.io";   // server (misalnya: localhost / 127.0.0.1)
+$user = "agromart_stairswar";        // default user XAMPP
+$pass = "699db939ac16d87d681ba90136782353e6a6a0ff";            // default password XAMPP biasanya kosong
+$db   = "agromart_stairswar";    // nama database
 
 // Buat koneksi
 $conn = mysqli_connect($host, $user, $pass, $db);
